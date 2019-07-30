@@ -1,1 +1,1 @@
-Alguns comandos do git para usar no terminal;
+Alguns comandos do git para usar no terminal: 
