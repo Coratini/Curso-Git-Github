@@ -8,4 +8,41 @@ Modified -> Quando o arquivo foi editado mas ainda não foi levado para ser salv
 
 Staged -> Quando o arquivo estiver pronto para ser commitado e ser salvo;
 
+
+-----------@@@@@@@@@------------@@@@@@@@@@@@@@@-----------@@@@@@@@@@@@@@@@@@@@@------------@@@@@@@@@@@@@--------------
+
 Usando o Git Log:
+
+git log -> serve para ver o histórico, qual a versão, rash do commit, o autor, a data e a mensagem do commit;
+
+git log --decorate -> Para ver se o arquivo foi de qual branch para qual branch, se houve o merge, quais tags foram geradas;
+
+git log --author="Lucas" -> Filtrar pelo nome do autor que fez os commits;
+
+git shortlog -> Ele monstra para o usuário em ordem alfabética quais foram os autores, quantos commits fizeram e quais eles foram;
+
+if(quiser ver só a quantidade de commit e o autor)
+{
+    git shortlog -sn;
+}
+
+else{
+    git shortlog;
+}
+
+git log --graph -> Ele monstra em forma gráfica o que está acontecendo com as branchs e com as versões.
+
+INFORMAÇÃO IMPORANTE: DENTRO DO GIT LOG NÓS TEMOS UMA RASH, PELA RASH CONSEGUIMOS IDENTIFICAR O QUE FOI FEITO NO COMMIT, SE FOI ADICIONADO OU SE NÃO FOI...
+
+EX: "git show 7a44f8a0810ab29aefb525fac9ff9f9091cfefc8" Conseguimos ver o que foi adicionado no commit, entre outras coisas. Como se fosse um histórico só daquele commit;
+
+------------$$$$$$$$$$-------------$$$$$$$$$$$$$$$$$-----------$$$$$$$$$$-----------$$$$$$$$$$$$$$$$----------$$$$$$$$$$$$$$------------$$$$$$$$$$$$$---------------
+
+git diff -> Permite que a gente veja as mudanças antes mesmo da gente enviar e fazer o commit. Ou seja, antes de dar o staged conseguimos ver as alterações que fizemos
+no arquivo, garantindo que não vá nada de errado para o commit; Sempre usar o git diff antes de fazer um commit, assim você consegue olhar as coisas que você fez;
+
+git diff --name-only -> É para dizer somente o nome do arquivo que foi modificado, caso tenha muitos arquivos;
+
+USE:
+git commit -am "mensagem de commit" -> Só irá usar esse comando caso o arquivo já existir e você estiver fazendo alguma alteração nele, usando esse
+comando ele será commitado direto sem precisar dar o git add .;
