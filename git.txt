@@ -46,3 +46,30 @@ git diff --name-only -> É para dizer somente o nome do arquivo que foi modifica
 USE:
 git commit -am "mensagem de commit" -> Só irá usar esse comando caso o arquivo já existir e você estiver fazendo alguma alteração nele, usando esse
 comando ele será commitado direto sem precisar dar o git add .;
+
+-------------#########--------------##################--------------###############----------------###############----------------##################-------------------
+
+DESFAZENDO COISAS NO GIT:
+
+git checkout nomedoarquivo.extensão -> Após você ter modificado um arquivo e ele estiver em modified ainda e você quiser descartar a alteração; 
+Caso ja esteja em stagied pronto para ser commitado o checkout não irá funcionar;
+
+git reset HEAD nomedoarquivo.extensão -> Esse comando é caso você ja deu o git add ou ele ja esteja em staged. No caso esse comando irá tirar do stagied e pro modified e 
+com o checkout e com diff você irá conseguir ver suas alterações e descartar se quiser;
+
+IMPORTANTE: FAZER O COMMIT SEM QUERER E QUERER DESFAZER O QUE JÁ FOI PARA O COMMIT.
+
+EXISTEM 3 TIPOS DE COMANDOS DE RESET
+
+(git reset --soft --mixed --hard)
+
+git reset --soft -> Ele vai pegar minhas modificações e vai só voltar/apagar o commit, mas o arquivo vai estar em staged com a modificação pronta para ser commitado novamente;
+
+git reset --mixed -> Ele vai matar o commit também, só que vai voltar meus arquivos para antes do stagied, ou seja, vai voltar no modified;
+
+git reset --hard -> Ele vai simplesmente ignorar a existência desse commit e tudo que foi feito nele. Um reset bem bruto que apagará tudo que foi feito voltando para
+ a versão antes de fazer o commit da modificação;
+
+ OBS: PARA RETORNAR O COMMIT DEVEMOS SEMPRE ESCOLHER O COMMIT ANTERIOR DO QUE FOI FEITO. UMA VEZ QUE O COMMIT QUE VOCÊ NÃO QUER MAIS, NÃO IRÁ EXISTIR;
+
+ GIT RESET --HARD -> TER CUIDADO POIS ELE ALTERA O HISTÓRICO DO COMMIT!
