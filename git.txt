@@ -1,1 +1,9 @@
 Alguns comandos do git para usar no terminal: 
+
+Untracked -> Quando o arquivo ainda não foi visto pelo Git;
+
+Unmodified -> Quando o arquivo não teve nenhuma modificação;
+
+Modified -> Quando o arquivo foi editado mas ainda não foi levado para ser salvo pelo git;
+
+Staged -> Quando o arquivo estiver pronto para ser commitado e ser salvo;
