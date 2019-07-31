@@ -85,4 +85,20 @@ git reset --hard -> Ele vai simplesmente ignorar a existência desse commit e tu
  Mudar de uma branch para outra: git checkout "nome da branch"
 
 
+ Git Stash
+
+ git stash -> Ele é responsável por guardar alterações que ainda não foram comitadas numa pasta/arquivo e que eu possa chamar depois quando achar necessário;
+
+ git stash apply -> Ele vai aplicar as mudanças que tinha salvo na pasta/arquivo "invisivel";
+
+ git stash list -> Ele mostra uma lista de todos os stash que tiver sendo feito;
+
+ git stash clear -> Ele limpa tudo o que estiver no stash, para não ter mais nenhuma modificação lá guardada.
+
+
+ 
+
+
+
+
 
