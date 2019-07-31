@@ -73,3 +73,16 @@ git reset --hard -> Ele vai simplesmente ignorar a existência desse commit e tu
  OBS: PARA RETORNAR O COMMIT DEVEMOS SEMPRE ESCOLHER O COMMIT ANTERIOR DO QUE FOI FEITO. UMA VEZ QUE O COMMIT QUE VOCÊ NÃO QUER MAIS, NÃO IRÁ EXISTIR;
 
  GIT RESET --HARD -> TER CUIDADO POIS ELE ALTERA O HISTÓRICO DO COMMIT!
+
+---------&&&&&&&&&&---------------&&&&&&&&&&-------------&&&&&&&&&&&&&--------------------&&&&&&&&&&&&&&&&&---------------
+
+ Tudo sobre branchs:
+
+ Criar branch: git checkout -b "nome da branch"
+
+ Deletar branch: git branch -D "nome da branch"
+
+ Mudar de uma branch para outra: git checkout "nome da branch"
+
+
+
