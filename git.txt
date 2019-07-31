@@ -96,6 +96,26 @@ git reset --hard -> Ele vai simplesmente ignorar a existência desse commit e tu
  git stash clear -> Ele limpa tudo o que estiver no stash, para não ter mais nenhuma modificação lá guardada.
 
 
+CONTROLE DE VERSÃO: FERRAMENTA QUE CONTROLA AS ALTERAÇÕES FEITAS EM DETERMINADO CÓDIGO. TEM UM HISTÓRICO DE
+ALTERAÇÕES CASO VOCE QUEIRA RESGATAR UMA VEZ SALVO.
+
+Comandos do GIT:
+
+git init -> inicializar um repositório dentro de uma estrutura.
+git clone -> serve para poder obter uma estrutura de projeto de um repositório remoto. Serve para clonar um repositório. 
+git add . ou git add <<nome_arquivo>> -> serve para adicionar arquivos para que o git possa rastrear
+git commit -m 'mensagem de commit' -> mensagem de commit do arquivo, para que fique claro o que foi feito naquela alteração
+git push(empurrar) -> uma forma de poder publicar nossas alterações em um servidor remoto;
+
+Servidor Remoto -> É aquele que esta num servidor, é aquele que esta sendo compartilhado com todos do time.
+Servidor Local -> É aquele que você criou na sua maquina;
+
+git pull(puxar) -> Atualizar seu repositório local, conforme esta o seu remoto pegando as alterações que foram feitas;
+git merge -> Juntar alterações de arquivos entre branchs; Resolução de conflitos. Qual alteração é valida no mesmo arquivo.
+git status -> vai prover informações referente ao estado atual do projeto, se tem arquivo adicionado ou não, se foi apagado etc
+git log -> vai devolver um histórico de alterações que o nosso repositório foi tendo ao longo do tempo.
+git branch <<nome da branch>> -> é quando você cria um novo ramo no projeto, além da master(produção). 
+
  
 
 
